@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :enrolled_courses,
     through: :enrollments,
     source: :course
-  # 
+  #
   # has_many :instructor,
   #   through: :enrolled_courses,
   #   source: :instructor
