@@ -29,11 +29,11 @@ class ShortenedUrl < ApplicationRecord
   end
 
   def num_clicks
-
+    visits.select(:user_id).count
   end
 
   def num_uniques
-
+    uniq()
   end
 
   def num_recent_uniques
